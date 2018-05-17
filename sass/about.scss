@@ -1,0 +1,42 @@
+.about{
+    color: #fff;
+    position: relative;
+    margin-bottom: 150px;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 100px;
+        display: inline-block;
+        width: 555px;
+        height: 630px;
+        background-image: url(../img/city.png);
+        background-repeat: no-repeat;
+    }
+    &__content{
+        margin-left: 630px;
+        // padding-top: 100px;
+    }
+    &__paragraph{
+        width: 340px;
+        margin-bottom: 30px;
+    }
+    &__paragraph-title{
+        color: #0b9fe4;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    &__paragraph-text{
+        color: #8bacc4;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__bold-text{
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+    }
+    &__button{
+
+    }
+}

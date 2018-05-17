@@ -1,0 +1,28 @@
+.title{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 75px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 2px;
+        background-image: url(../img/title-line.png);
+    }
+    &__main-text{
+        font-size: 50px;
+        margin: 25px;
+        margin-top: 0;
+        color: #fff;
+    }
+    &__extra-text{
+        font-size: 14px;
+        color: #6f9cbf;
+        font-weight: 100;
+    }
+}
