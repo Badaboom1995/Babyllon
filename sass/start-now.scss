@@ -1,0 +1,48 @@
+.start-now{
+    background-color: #0a8ac6;
+    overflow: hidden;
+    position: relative;
+    &::before,&::after{
+        content: '';
+        position: absolute;
+        background-image: url(../img/promo-phone.png);
+        width: 500px;
+        height: 800px;
+    }
+    &::before{
+        left: 100px;
+        top: 70px;
+        transform: rotate(15deg);
+       
+    }
+    &::after{
+        left: -250px;
+        top: -500px;
+        transform: rotate(15deg);
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 145px 250px 108px 0px;
+    }
+    &__content{
+        width: 470px;
+    }
+    &__title{
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 50px;
+    }
+    &__buttons{
+       display: flex;
+       justify-content: space-between;
+    }
+}

@@ -30,4 +30,8 @@
     &--google::before{
         background-image: url(../img/google-button-icon.png);
     }
+    &--dark{
+        background-color: #051b2b;
+        box-shadow: 0 12px 30px #0c5375;
+    }
 }
