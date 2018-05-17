@@ -1,0 +1,67 @@
+.referal-program{
+    &__item{
+        margin-bottom: 150px;
+    }
+    &__step{
+        width: 342px;
+        margin: 0 auto;
+        position: relative;
+        &--right{
+            margin-top: 25px;
+            margin-left: 200px;
+        }
+    }
+    &__step-card{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 16px 16px 12px 18px;
+        box-shadow: 0 5px 40px #081621;
+        border-radius: 12px;
+        border: 1px solid #072031;
+        background-color: #051b2b;
+        position: relative;
+    }
+    &__card-left{
+        display: flex;
+    }
+    &__step-card-avatar{
+        margin-right: 10px;
+    }
+    &__card-personal-info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__step-card-name{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    &__step-card-level{
+        color: #34546c;
+        font-size: 12px;
+    }
+    &__step-card-members{
+        color: #34546c;
+        font-size: 12px;
+        /* Text style for "+ 25 участ" */
+        letter-spacing: -0.29px;
+    }
+    &__step-sum{
+        display: flex;
+        flex-direction: column;
+        padding-left: 73px;
+        padding-top: 20px;
+    }
+    &__step-sum-title{ 
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__step-sum-formula{
+        color: #34546c;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

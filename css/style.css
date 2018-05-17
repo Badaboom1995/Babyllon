@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -405,7 +406,11 @@ body {
   background-color: #051b2b;
   font-family: 'SFPro';
   font-weight: 400;
-  background-image: url(../img/body-mask.png); }
+  background-size: contain; }
+  body .circles {
+    background-image: url(../img/circles.png);
+    background-repeat: no-repeat;
+    background-position: center 580px; }
 
 @font-face {
   font-family: 'SFPro';
@@ -442,8 +447,6 @@ body {
     width: 1140px;
     margin: 0 auto;
     position: relative; }
-  .main-header__nav {
-    margin-right: -18px; }
   .main-header__list {
     display: flex;
     margin: 0; }
@@ -479,13 +482,48 @@ body {
     background-color: transparent;
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 14px; }
+    font-size: 14px;
+    cursor: pointer; }
     .main-header__language-item--active {
       border: 1px solid #fff;
       border-radius: 6px; }
+  .main-header__title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-top: 110px; }
+  .main-header__subtitle {
+    margin: 0 auto;
+    width: 322px;
+    margin-bottom: 300px;
+    text-align: center;
+    opacity: 0.75;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px; }
 
 .header-container {
-  margin-bottom: 130px; }
+  margin-bottom: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(../img/index-body-bg.png);
+  position: relative; }
+  .header-container--fade::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/small-fade-mask.png);
+    background-size: contain; }
+  .header-container--wave-bg {
+    background-image: url(../img/wave-bg.png); }
 
 .button {
   padding: 20px 0px;
@@ -631,15 +669,6 @@ body {
   .how-it-works__bullet {
     width: 300px;
     position: absolute; }
-    .how-it-works__bullet::before {
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      background-color: #fff;
-      border-radius: 50%;
-      top: 0;
-      left: 20px; }
   .how-it-works__bullet-title {
     color: #0b9fe4;
     font-size: 32px;
@@ -880,3 +909,103 @@ body {
   .social__icon--instagram {
     background-image: url(../img/instagram-icon.png);
     background-position: 0 3px; }
+
+.type-of-income__item {
+  display: flex;
+  justify-content: space-between;
+  width: 830px;
+  margin: 0 auto;
+  margin-bottom: 100px; }
+
+.type-of-income__item-content {
+  width: 360px; }
+
+.type-of-income__title {
+  color: #0b9fe4;
+  font-size: 32px;
+  font-weight: 400; }
+
+.type-of-income__text {
+  color: #8bacc4;
+  font-size: 14px;
+  line-height: 20px; }
+
+.paragraph {
+  width: 340px;
+  margin-bottom: 30px; }
+  .paragraph__title {
+    color: #0b9fe4;
+    font-size: 32px;
+    font-weight: 400; }
+  .paragraph__text {
+    color: #8bacc4;
+    font-size: 14px;
+    line-height: 20px; }
+  .paragraph__bold-text {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #fff; }
+
+.referal-program__item {
+  margin-bottom: 150px; }
+
+.referal-program__step {
+  width: 342px;
+  margin: 0 auto;
+  position: relative; }
+  .referal-program__step--right {
+    margin-top: 25px;
+    margin-left: 200px; }
+
+.referal-program__step-card {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 16px 16px 12px 18px;
+  box-shadow: 0 5px 40px #081621;
+  border-radius: 12px;
+  border: 1px solid #072031;
+  background-color: #051b2b;
+  position: relative; }
+
+.referal-program__card-left {
+  display: flex; }
+
+.referal-program__step-card-avatar {
+  margin-right: 10px; }
+
+.referal-program__card-personal-info {
+  display: flex;
+  flex-direction: column; }
+
+.referal-program__step-card-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px; }
+
+.referal-program__step-card-level {
+  color: #34546c;
+  font-size: 12px; }
+
+.referal-program__step-card-members {
+  color: #34546c;
+  font-size: 12px;
+  /* Text style for "+ 25 участ" */
+  letter-spacing: -0.29px; }
+
+.referal-program__step-sum {
+  display: flex;
+  flex-direction: column;
+  padding-left: 73px;
+  padding-top: 20px; }
+
+.referal-program__step-sum-title {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px; }
+
+.referal-program__step-sum-formula {
+  color: #34546c;
+  font-size: 14px;
+  line-height: 20px; }

@@ -1,0 +1,22 @@
+.type-of-income{
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        width: 830px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+    &__item-content{
+       width: 360px;
+    }
+    &__title{
+        color: #0b9fe4;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    &__text{
+        color: #8bacc4;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

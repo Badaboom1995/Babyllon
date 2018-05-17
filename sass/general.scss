@@ -2,5 +2,10 @@ body{
     background-color: #051b2b;
     font-family: 'SFPro';
     font-weight: 400;
-    background-image: url(../img/body-mask.png);
+    background-size: contain;
+    .circles{
+       background-image: url(../img/circles.png);
+       background-repeat: no-repeat;
+       background-position: center 580px;
+    }
 }

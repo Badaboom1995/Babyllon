@@ -1,0 +1,19 @@
+.paragraph{
+    width: 340px;
+    margin-bottom: 30px;
+    &__title{
+        color: #0b9fe4;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    &__text{
+        color: #8bacc4;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__bold-text{
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #fff;
+    }
+}

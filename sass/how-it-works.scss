@@ -23,16 +23,16 @@
     &__bullet{
         width: 300px;
         position: absolute;
-        &::before{
-            content: '';
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            background-color: #fff;
-            border-radius: 50%;
-            top: 0;
-            left: 20px;
-        }
+        // &::before{
+        //     content: '';
+        //     position: absolute;
+        //     width: 12px;
+        //     height: 12px;
+        //     background-color: #fff;
+        //     border-radius: 50%;
+        //     top: 0;
+        //     left: 20px;
+        // }
     }
     &__bullet-title{
         color: #0b9fe4;
