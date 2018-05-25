@@ -2,16 +2,31 @@
     background-image: url(../img/footer-bg.png);
     background-position: center;
     background-size: cover;
+    @media (max-width: $tablet){
+       padding: 0px 30px;
+    }
     &__middle-line{
         display: flex;
         padding: 60px 0px;
         color: #fff;
+        @media (max-width: $mobile){
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            padding-top: 0;
+        }
     }
     &__middle-block{
         width: 300px;
         margin-right: 130px;
         &:last-child{
             margin-right: 0;
+        }
+        @media (max-width: $mobile){
+            margin-right: 0;
+            margin-bottom: 30px;
+            padding: 0px 10px;
         }
     }
     &__block-title{
@@ -31,6 +46,9 @@
         margin-top: 0;
         margin-bottom: 5px;
     }
+    &__copyright{
+        text-align: center;
+    }
     &__mail-form{
         padding-top: 50px;
         position: relative;
@@ -47,6 +65,9 @@
         @include placeholder {
             color:#fff;
             opacity: 0.2;
+            @media (max-width: $mobile){
+                font-size: 14px;
+            }
         }
     }
     &__form-submit{
@@ -72,6 +93,9 @@
         opacity: 0.5;
         color: #fff;
         padding: 35px 0px;
+        @media (max-width: $mobile){
+            flex-direction: column-reverse;
+        }
     }
     &__bottom-line-wrapper{
         border-top:1px solid rgba(#fff , 0.05);
@@ -83,6 +107,18 @@
         text-decoration: none;
         color: #fff;
         margin-right: 64px;
+        @media (max-width: $mobile){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
+    }
+    &__social{
+        @media (max-width: $mobile){
+           margin: 0 auto;
+        }
     }
     
 }

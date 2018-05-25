@@ -1,6 +1,17 @@
 .referal-program{
+    @media (max-width: $mobile){
+        margin-bottom: 100px;
+    }
     &__item{
         margin-bottom: 150px;
+        @media (max-width: $mobile){
+            display: none;
+        }
+        img{
+            @media (max-width: $tablet){
+               width: 100%;
+            }
+        }
     }
     &__step{
         width: 342px;

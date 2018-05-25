@@ -7,5 +7,8 @@ body{
        background-image: url(../img/circles.png);
        background-repeat: no-repeat;
        background-position: center 580px;
+       @media (max-width: $mobile){
+           background-image:url(../img/dots.png);
+        }
     }
 }

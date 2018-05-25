@@ -1,8 +1,10 @@
 @import "normalize.scss";
-@import "general.scss";
-@import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "fonts.scss";
+@import "general.scss";
+@import "paragraph.scss";
+@import "box-with-shadow.scss";
 @import "logo.scss";
 @import "main-header.scss";
 @import "header-container.scss";
@@ -18,5 +20,6 @@
 @import "main-footer.scss";
 @import "social.scss";
 @import "type-of-income.scss";
-@import "paragraph.scss";
 @import "referal-program.scss";
+@import "our-mission.scss";
+@import "rules-of-success.scss";

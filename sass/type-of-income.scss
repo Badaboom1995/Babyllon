@@ -5,9 +5,25 @@
         width: 830px;
         margin: 0 auto;
         margin-bottom: 100px;
+        @media (max-width: $tablet){
+            width: 100%;
+        }
+        @media (max-width: $mobile){
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &--tokens{
+            @media (max-width: $mobile){
+                flex-direction: column-reverse;
+            } 
+        }
     }
     &__item-content{
        width: 360px;
+       @media (max-width: $mobile){
+            width: 100%;
+       }
     }
     &__title{
         color: #0b9fe4;
@@ -18,5 +34,16 @@
         color: #8bacc4;
         font-size: 14px;
         line-height: 20px;
+    }
+    &__icon{
+        @media (max-width: $mobile){
+           text-align: center;
+        }
+        img{
+            @media (max-width: $mobile){
+                width: 100%;
+                max-width: 350px;
+            }
+        }
     }
 }

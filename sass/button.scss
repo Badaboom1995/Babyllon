@@ -8,6 +8,11 @@
     cursor: pointer;
     padding: 15px 50px;
     text-align: center;
+    @media (max-width: $mobile){
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 15px;
+    }
     &--apple, &--google{
         position: relative;
         padding-left: 70px;
@@ -15,6 +20,11 @@
         margin-right: 10px;
         width: 223px;
         height: 72px;
+        @media (max-width: $mobile){
+            width: 100%;
+            margin-bottom: 15px;
+            max-width: 300px;
+        }
         &::before{
             content: '';
             position: absolute;

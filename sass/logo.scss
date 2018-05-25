@@ -6,4 +6,16 @@
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    @media (max-width: $mobile){
+        width: 85px;
+        height: 40px;
+    }
+    &--footer{
+        @media (max-width: $mobile){
+            display: block;
+            text-align: center;
+            width: 100%;
+            background-image:none;
+        }
+    }
 }

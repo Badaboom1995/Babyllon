@@ -1,5 +1,8 @@
 .how-it-works{
     margin-bottom: 150px;
+    @media(max-width: $mobile){
+        margin-bottom: 100px;
+    }
     &__map{
         position: relative;
     }
@@ -8,8 +11,15 @@
         margin: 0 auto;
         text-align: center;
         position: relative;
+        @media(max-width: $mobile){
+            margin-top: 50px;
+            width: 100%;
+        }
         img{
             margin-bottom: 30px;
+            @media(max-width: $mobile){
+                display: none;
+            }
         }
         &::before{
             content: '';
@@ -18,11 +28,18 @@
             height: 170px;
             background-image: url(../img/small-fade-mask.png);
             bottom: 50px;
+            @media(max-width: $mobile){
+                display: none;
+            }
         }
     }
     &__bullet{
         width: 300px;
         position: absolute;
+        @media(max-width: $mobile){
+            position: static;
+            width: 100%;
+        }
         // &::before{
         //     content: '';
         //     position: absolute;

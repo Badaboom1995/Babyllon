@@ -5,6 +5,14 @@
     overflow: hidden;
     background-image: url(../img/index-body-bg.png);
     position: relative;
+    @media (max-width: $mobile){
+       margin-bottom: 70px;
+    }
+    &__quote{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
     &--fade::before{
         position: absolute;
         bottom: 0;
