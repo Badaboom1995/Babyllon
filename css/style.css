@@ -488,10 +488,50 @@ body {
       background-image: none; } }
 
 .main-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative; }
   @media (max-width: 1140px) {
     .main-header {
       border-bottom: none; } }
+  @media (max-width: 1140px) {
+    .main-header--active {
+      background-color: #051b2b;
+      border-bottom: none; }
+      .main-header--active .main-header__language {
+        display: block;
+        width: 100%;
+        position: static;
+        padding-top: 30px;
+        text-align: center; }
+      .main-header--active .main-header__mobile-button {
+        background-image: url(../img/x-circle.png); }
+      .main-header--active .main-header__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 30px; }
+      .main-header--active .main-header__nav {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px; }
+      .main-header--active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        left: 0;
+        top: 115px; }
+      .main-header--active::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.5);
+        left: 0;
+        bottom: 125px; } }
   .main-header__container {
     display: flex;
     justify-content: space-between;
@@ -504,7 +544,9 @@ body {
     @media (max-width: 1140px) {
       .main-header__container {
         width: auto;
-        padding: 52px 30px; } }
+        padding: 52px 30px;
+        flex-direction: column;
+        align-items: flex-start; } }
   .main-header__nav {
     position: relative; }
     @media (max-width: 767px) {
@@ -526,8 +568,14 @@ body {
     text-decoration: none;
     padding: 18px;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .main-header__list-link {
+        opacity: 1; } }
     .main-header__list-link--active {
       opacity: 1; }
+      @media (max-width: 767px) {
+        .main-header__list-link--active {
+          color: #0b9fe4; } }
       .main-header__list-link--active::before {
         content: '';
         position: absolute;
@@ -536,6 +584,9 @@ body {
         width: 100%;
         height: 1px;
         background-color: #0b9fe4; }
+        @media (max-width: 767px) {
+          .main-header__list-link--active::before {
+            display: none; } }
   .main-header__language {
     position: absolute;
     top: 40px;
