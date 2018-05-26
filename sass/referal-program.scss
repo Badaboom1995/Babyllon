@@ -1,4 +1,10 @@
 .referal-program{
+    &__mobile-version{
+        display: none;
+        @media (max-width: $mobile){
+            display: block;
+        }
+    }
     @media (max-width: $mobile){
         margin-bottom: 100px;
     }

@@ -1259,6 +1259,12 @@ body {
     width: 100%;
     max-width: 350px; } }
 
+.referal-program__mobile-version {
+  display: none; }
+  @media (max-width: 767px) {
+    .referal-program__mobile-version {
+      display: block; } }
+
 @media (max-width: 767px) {
   .referal-program {
     margin-bottom: 100px; } }
